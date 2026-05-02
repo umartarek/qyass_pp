@@ -15,9 +15,9 @@ on_session_creation = "qyass.utils.force_redirect"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/qyass/css/qyass.css"
-app_include_js = ["/assets/qyass/js/qyass/views/kanban/kanban_view.js",
-                  "/assets/qyass/js/theme28.js"
-				  ]
+# app_include_js = ["/assets/qyass/js/qyass/views/kanban/kanban_view.js",
+#                   "/assets/qyass/js/theme28.js"
+# 				  ]
 
 # include js, css files in header of web template
 # web_include_css = "/assets/qyass/css/qyass.css"
