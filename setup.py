@@ -7,7 +7,7 @@ with open("requirements.txt") as f:
 from qyass_pp import __version__ as version
 
 setup(
-	name="qyass_pp",
+	name="qyass",
 	version=version,
 	description="multi themes for frappe & erpnext apps",
 	author="tahir zaqout",
