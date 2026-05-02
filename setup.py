@@ -4,7 +4,7 @@ with open("requirements.txt") as f:
 	install_requires = f.read().strip().split("\n")
 
 # get version from __version__ variable in sundae_theme/__init__.py
-from sundae_theme import __version__ as version
+from qyass_pp import __version__ as version
 
 setup(
 	name="qyass_pp",
