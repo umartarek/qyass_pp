@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{organization}.{year}.{standard}.{standard_two}",
+ "creation": "2024-01-08 13:35:45.068354",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "organization",
+  "year",
+  "section_break_ypmo",
+  "standard",
+  "elements",
+  "standard_results_one",
+  "standard_results_circles",
+  "section_break_rtvn",
+  "standard_two",
+  "elements_table_two",
+  "standard_results_two"
+ ],
+ "fields": [
+  {
+   "fieldname": "organization",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Organization",
+   "options": "Organization",
+   "reqd": 1
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Link",
+   "label": "Year",
+   "options": "Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "standard",
+   "fieldtype": "Link",
+   "label": "Standard",
+   "options": "Standards",
+   "reqd": 1
+  },
+  {
+   "fieldname": "elements",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Elements",
+   "mandatory_depends_on": "eval: doc.standard;",
+   "options": "Elements Child Table"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_ypmo",
+   "fieldtype": "Section Break",
+   "label": "Standard"
+  },
+  {
+   "fieldname": "standard_results_one",
+   "fieldtype": "HTML",
+   "label": "Standard Results One",
+   "options": "<div id=\"chart_one\"></div>"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_rtvn",
+   "fieldtype": "Section Break",
+   "label": "Standard"
+  },
+  {
+   "fieldname": "standard_two",
+   "fieldtype": "Link",
+   "label": "Standard",
+   "options": "Standards"
+  },
+  {
+   "fieldname": "elements_table_two",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Elements",
+   "mandatory_depends_on": "eval: doc.standard_two;",
+   "options": "Elements Child Table"
+  },
+  {
+   "fieldname": "standard_results_two",
+   "fieldtype": "HTML",
+   "label": "Standard Results Two",
+   "options": "<div id=\"chart_two\"></div>"
+  },
+  {
+   "fieldname": "standard_results_circles",
+   "fieldtype": "HTML",
+   "label": "Standard Results Circles",
+   "options": "<div id=\"circles_one\"></div>"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-11 10:28:14.159527",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Organization Entry",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

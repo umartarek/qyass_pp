@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-06 15:49:58.528808",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_doc",
+  "type",
+  "weight"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Legal Document Type"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "name_doc",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-04 15:14:54.363336",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Legal Document",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

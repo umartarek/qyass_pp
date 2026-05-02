@@ -1,0 +1,227 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"ekO6JVk6sV\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0627\u0644\u0627\u0639\u0645\u0627\u0644 \u0627\u0644\u062f\u0648\u0631\u064a\u0629</span>\",\"col\":4}},{\"id\":\"y_GxaNn7b3\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0627\u062f\u062e\u0627\u0644 \u0627\u0644\u0645\u0639\u0627\u064a\u064a\u0631</span>\",\"col\":4}},{\"id\":\"X_FarvzJv8\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u062a\u0639\u0631\u064a\u0641\u0627\u062a<b></b></span>\",\"col\":4}},{\"id\":\"QemSFn1f4A\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u062d\u0631\u0643\u0627\u062a\",\"col\":4}},{\"id\":\"s6x846x_6G\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u062f\u062e\u0627\u0644 \u0627\u0644\u0645\u0639\u0627\u064a\u064a\u0631\",\"col\":4}},{\"id\":\"c9YlDoiMbD\",\"type\":\"card\",\"data\":{\"card_name\":\"\u062a\u0639\u0631\u064a\u0641\u0627\u062a\",\"col\":4}}]",
+ "creation": "2024-03-18 09:24:21.619146",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 1,
+ "icon": "solid-success",
+ "idx": 2,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "\u0642\u064a\u0627\u0633",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062a\u0639\u0631\u064a\u0641\u0627\u062a",
+   "link_count": 6,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062a\u0639\u0631\u064a\u0641 \u0644\u062c\u0646\u0629 \u0627\u0644\u062d\u0648\u0643\u0645\u0629",
+   "link_count": 0,
+   "link_to": "Governance Committees 2024",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062a\u0639\u0631\u064a\u0641 \u0627\u0644\u0645\u0633\u062a\u0634\u0627\u0631\u064a\u0646",
+   "link_count": 0,
+   "link_to": "Consultant",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062a\u0639\u0631\u064a\u0641 \u0627\u0644\u0627\u062f\u0627\u0631\u0627\u062a",
+   "link_count": 0,
+   "link_to": "Department",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062a\u0639\u0631\u064a\u0641 \u0627\u0644\u0645\u0648\u0638\u0641\u064a\u0646",
+   "link_count": 0,
+   "link_to": "Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062a\u0639\u0631\u064a\u0641 \u0627\u0644\u0645\u0634\u0631\u0648\u0639\u0627\u062a",
+   "link_count": 0,
+   "link_to": "Project",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062a\u0639\u0631\u064a\u0641 \u0627\u0644\u0648\u0638\u0627\u0626\u0641",
+   "link_count": 0,
+   "link_to": "Position",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u062f\u062e\u0627\u0644 \u0627\u0644\u0645\u0639\u0627\u064a\u064a\u0631",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0645\u0639\u0627\u064a\u064a\u0631",
+   "link_count": 0,
+   "link_to": "Elements-2024",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0645\u062d\u0627\u0648\u0631",
+   "link_count": 0,
+   "link_to": "Dimension",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0645\u0646\u0627\u0638\u064a\u0631",
+   "link_count": 0,
+   "link_to": "Vision",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u062a\u062e\u0637\u064a\u0637",
+   "link_count": 0,
+   "link_to": "qyass plan",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u062d\u0631\u0643\u0627\u062a",
+   "link_count": 7,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0645\u0647\u0627\u0645 \u0627\u0644\u064a\u0648\u0645\u064a\u0629",
+   "link_count": 0,
+   "link_to": "Qyass_emp_dailywork",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639\u0627\u062a",
+   "link_count": 0,
+   "link_to": "Project Meeting 2024",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0634\u0631\u062d \u0628\u0627\u0644\u0641\u064a\u062f\u064a\u0648",
+   "link_count": 0,
+   "link_to": "Video",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062a\u0639\u0627\u0645\u064a\u0645 \u0642\u064a\u0627\u0633",
+   "link_count": 0,
+   "link_to": "Dga Generalization",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0633\u0626\u0644\u0647 \u0648\u0627\u062c\u0648\u0628\u0647",
+   "link_count": 0,
+   "link_to": "Q And A",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062a\u0639\u0627\u0645\u064a\u0645 \u062f\u0627\u062e\u0644\u064a\u0647",
+   "link_count": 0,
+   "link_to": "Internal Generalizations",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0639\u062f\u0627\u062f \u0627\u0644\u0645\u0643\u062a\u0628\u0629 \u0627\u0644\u0635\u0648\u062a\u064a\u0647",
+   "link_count": 0,
+   "link_to": "Audio",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-12-10 08:37:08.182245",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "\u0642\u064a\u0627\u0633",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [],
+ "title": "\u0642\u064a\u0627\u0633"
+}

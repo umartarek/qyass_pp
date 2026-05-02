@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:id_group",
+ "creation": "2024-06-13 21:00:17.704728",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "enter_group_section",
+  "id_group",
+  "geolocation_wqxe"
+ ],
+ "fields": [
+  {
+   "fieldname": "enter_group_section",
+   "fieldtype": "Section Break",
+   "label": "Enter group"
+  },
+  {
+   "fieldname": "id_group",
+   "fieldtype": "Data",
+   "label": "ID GROUP",
+   "unique": 1
+  },
+  {
+   "fieldname": "geolocation_wqxe",
+   "fieldtype": "Geolocation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-13 21:10:33.908152",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Amro-Groups",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

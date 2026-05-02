@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2024-01-14 10:26:49.881218",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2024-01-14 10:26:49.881218",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "organization-entry-k",
+ "owner": "Administrator",
+ "page_name": "organization-entry-k",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Elementa Page"
+}

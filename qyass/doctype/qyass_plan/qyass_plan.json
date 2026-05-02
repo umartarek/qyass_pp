@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:p_name",
+ "creation": "2024-03-19 08:14:01.839249",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_dbqt",
+  "p_name",
+  "employee",
+  "section_break_eule",
+  "start_date",
+  "column_break_hecc",
+  "end_date",
+  "column_break_vfvm",
+  "actual_date",
+  "section_break_bzrm",
+  "elements"
+ ],
+ "fields": [
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "\u0645\u0646 \u062a\u0627\u0631\u064a\u062e"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "\u0627\u0644\u0649 \u062a\u0627\u0631\u064a\u062e"
+  },
+  {
+   "fieldname": "section_break_bzrm",
+   "fieldtype": "Section Break",
+   "label": "\u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u062e\u0637\u0629"
+  },
+  {
+   "default": "\u062f\u0631\u0627\u0633\u0629 \u0627\u0644\u0645\u0639\u0627\u064a\u064a\u0631",
+   "fieldname": "section_break_dbqt",
+   "fieldtype": "Section Break",
+   "read_only": 1
+  },
+  {
+   "fieldname": "actual_date",
+   "fieldtype": "Date",
+   "label": "\u0627\u0644\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0641\u0639\u0644\u064a"
+  },
+  {
+   "fieldname": "section_break_eule",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_hecc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vfvm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "p_name",
+   "fieldtype": "Data",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u062e\u0637\u0629",
+   "unique": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0645\u0648\u0638\u0641 \u0627\u0644\u0645\u0633\u0624\u0648\u0644",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "elements",
+   "fieldtype": "Table",
+   "label": "element",
+   "options": "Element2024 child",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-11 09:40:30.077369",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "qyass plan",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

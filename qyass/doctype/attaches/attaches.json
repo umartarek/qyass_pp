@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-16 13:26:44.720273",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "attachss"
+ ],
+ "fields": [
+  {
+   "fieldname": "attachss",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "\u0627\u0631\u0641\u0642"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-16 13:39:42.860240",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "attaches",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

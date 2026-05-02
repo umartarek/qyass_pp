@@ -1,0 +1,27 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2024-02-15 16:59:02.188315",
+ "disabled": 1,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2024-02-18 12:58:48.364370",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Empty fields",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "select name , digital_transformation_officer,department from `tabStandard Group Elements`",
+ "ref_doctype": "Standard Group Elements",
+ "report_name": "Empty fields",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

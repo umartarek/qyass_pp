@@ -1,0 +1,36 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "",
+ "creation": "2024-10-01 10:47:22.764877",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Elements-2024",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p></>",
+ "message_type": "HTML",
+ "modified": "2024-10-01 13:04:30.187127",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "sa",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "",
+   "receiver_by_document_field": "",
+   "receiver_by_role": "Committee Member"
+  },
+  {
+   "receiver_by_document_field": "",
+   "receiver_by_role": "System Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": " {{ doc.name }} Has Changed, Warning the Expected End Date is {{ doc.expected_end_date}} and Completed Proof {{  doc.complete_percent}}",
+ "value_changed": "completed_count"
+}

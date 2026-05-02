@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:consultant_name",
+ "creation": "2024-02-29 09:43:35.634446",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "consultant_name",
+  "exp_yrs",
+  "available_time",
+  "hour_rate",
+  "column_break_xpsu",
+  "specialization",
+  "phone_no",
+  "email",
+  "consultation_days"
+ ],
+ "fields": [
+  {
+   "fieldname": "consultant_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Consultant Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "specialization",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Specialization",
+   "options": "Specialization",
+   "reqd": 1
+  },
+  {
+   "fieldname": "exp_yrs",
+   "fieldtype": "Int",
+   "label": "Exp Yrs"
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Data",
+   "label": "Phone No"
+  },
+  {
+   "fieldname": "consultation_days",
+   "fieldtype": "Table",
+   "label": "Consultation Days",
+   "options": "Consultation Days"
+  },
+  {
+   "fieldname": "available_time",
+   "fieldtype": "Table",
+   "label": "Available Time",
+   "options": "Consultation Time"
+  },
+  {
+   "depends_on": "eval:frappe.session.user=='Administrator'",
+   "fieldname": "hour_rate",
+   "fieldtype": "Currency",
+   "label": "Hour Rate"
+  },
+  {
+   "fieldname": "column_break_xpsu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "email"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-27 15:53:49.350665",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Consultant",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

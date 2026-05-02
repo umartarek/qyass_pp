@@ -1,0 +1,14 @@
+.elements-page {
+	font-size: var(--text-base);
+}
+
+.elements-page-card {
+	display: block;
+	text-decoration: none;
+	margin-bottom: var(--margin-lg);
+}
+
+.elements-page-card:hover {
+	box-shadow: var(--shadow-md);
+	text-decoration: none;
+}

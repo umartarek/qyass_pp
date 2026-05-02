@@ -1,0 +1,236 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:MT.{project}.{YYYY}{MM}.{##}",
+ "creation": "2024-02-25 12:55:22.956386",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "meeting_done",
+  "element",
+  "meeting_date",
+  "meeting_title",
+  "start_meeting",
+  "status",
+  "column_break_4",
+  "project_name",
+  "meeting_manager",
+  "location",
+  "kick_of_meeting",
+  "kick_of_meeting_document_section",
+  "kick_of_meeting_document",
+  "meeting_elements",
+  "elements",
+  "column_break_rgcf",
+  "participate",
+  "column_break_kopw",
+  "desction",
+  "section_break_odbj",
+  "meeting_summary",
+  "send_summary",
+  "invitation_sent"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "depends_on": "eval: doc.status == \"Invited\";",
+   "fieldname": "meeting_done",
+   "fieldtype": "Check",
+   "label": "Meeting Done"
+  },
+  {
+   "default": "Today",
+   "fieldname": "meeting_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Meeting  Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "meeting_title",
+   "fieldtype": "Data",
+   "label": "Meeting Title"
+  },
+  {
+   "fieldname": "start_meeting",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Start Meeting"
+  },
+  {
+   "bold": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Status",
+   "no_copy": 1,
+   "options": "Before\nInvited\nAfter\nPrint"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "element",
+   "fetch_from": "element.element",
+   "fieldname": "project_name",
+   "fieldtype": "Read Only",
+   "label": "Element Name"
+  },
+  {
+   "fieldname": "meeting_manager",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Meeting manager",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "default": "0",
+   "fieldname": "kick_of_meeting",
+   "fieldtype": "Check",
+   "label": "Kick of Meeting"
+  },
+  {
+   "depends_on": "eval:doc.kick_of_meeting==1",
+   "fieldname": "kick_of_meeting_document_section",
+   "fieldtype": "Section Break",
+   "label": "Kick of Meeting Document",
+   "mandatory_depends_on": "eval:doc.kick_of_meeting==1"
+  },
+  {
+   "depends_on": "eval:doc.kick_of_meeting==1",
+   "fieldname": "kick_of_meeting_document",
+   "fieldtype": "Table",
+   "label": "Kick of Meeting Document",
+   "mandatory_depends_on": "eval:doc.kick_of_meeting==1",
+   "options": "Kick of Meeting Documents"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "meeting_elements",
+   "fieldtype": "Section Break",
+   "label": "Meeting elements"
+  },
+  {
+   "bold": 1,
+   "fieldname": "elements",
+   "fieldtype": "Table",
+   "label": "Meeting Agenda",
+   "options": "Projects Meeting Melement"
+  },
+  {
+   "fieldname": "column_break_rgcf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "participate",
+   "fieldtype": "Table",
+   "label": "Participate",
+   "options": "Project Meeting Participate"
+  },
+  {
+   "fieldname": "column_break_kopw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "depends_on": "eval:doc.meeting_done;",
+   "fieldname": "desction",
+   "fieldtype": "Table",
+   "label": "Discussion",
+   "options": "Projects Meeting Desction"
+  },
+  {
+   "fieldname": "section_break_odbj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.meeting_done;",
+   "fieldname": "meeting_summary",
+   "fieldtype": "Text",
+   "label": "Meeting Summary"
+  },
+  {
+   "depends_on": "eval:doc.meeting_done && doc.meeting_summary;",
+   "fieldname": "send_summary",
+   "fieldtype": "Button",
+   "label": "Send Summary"
+  },
+  {
+   "default": "0",
+   "fieldname": "invitation_sent",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Invitation Sent",
+   "read_only": 1
+  },
+  {
+   "fieldname": "element",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Element",
+   "options": "Standard Group Elements",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-26 10:42:14.983554",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Projects Meeting",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

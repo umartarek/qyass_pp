@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2024-01-11 23:31:59.554281",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2024-01-11 23:31:59.554281",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "elements-page-filter",
+ "owner": "Administrator",
+ "page_name": "elements-page-filter",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Elements Page"
+}

@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2024-02-26 16:24:43.935757",
+ "docstatus": 0,
+ "doctype": "Page",
+ "icon": "",
+ "idx": 0,
+ "modified": "2024-02-26 16:24:43.935757",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "employee-kanban-2024",
+ "owner": "Administrator",
+ "page_name": "employee-kanban-2024",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0
+}

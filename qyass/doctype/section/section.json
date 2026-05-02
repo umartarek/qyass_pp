@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:section",
+ "creation": "2026-03-09 15:08:28.270593",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "\u0627\u0644\u0648\u0643\u0627\u0644\u0629",
+  "\u0627\u0644\u0627\u062f\u0627\u0631\u0629_\u0627\u0644\u0639\u0644\u064a\u0627",
+  "department",
+  "section"
+ ],
+ "fields": [
+  {
+   "fieldname": "section",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0642\u0633\u0645",
+   "unique": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0627\u062f\u0627\u0631\u0629",
+   "link_filters": "[[\"Department\",\"top_management\",\"=\",\"eval: doc.top_management\"]]",
+   "options": "Department"
+  },
+  {
+   "fieldname": "\u0627\u0644\u0648\u0643\u0627\u0644\u0629",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0648\u0643\u0627\u0644\u0629",
+   "options": "Agency"
+  },
+  {
+   "fieldname": "\u0627\u0644\u0627\u062f\u0627\u0631\u0629_\u0627\u0644\u0639\u0644\u064a\u0627",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0627\u062f\u0627\u0631\u0629 \u0627\u0644\u0639\u0644\u064a\u0627",
+   "link_filters": "[[\"Top Management\",\"agency\",\"=\",\"eval: doc.agency\"]]",
+   "options": "Top Management"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-10 05:23:44.162861",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Section",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

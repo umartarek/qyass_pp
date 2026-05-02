@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-11 12:07:28.818484",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stage",
+  "complete_percent"
+ ],
+ "fields": [
+  {
+   "fieldname": "stage",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Stage"
+  },
+  {
+   "default": "0",
+   "fieldname": "complete_percent",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Complete Percent"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-27 11:38:18.502762",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Implementation Stages",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

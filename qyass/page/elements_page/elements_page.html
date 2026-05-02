@@ -1,0 +1,45 @@
+<!-- jinja -->
+<div class="row elements-page">
+    {% set doc = frappe.get_doc("Organization Entry", organization) %}
+    {% set colors = {'التزام كلي': '#00E676', 'التزام جزئي': '#FFA500', 'عدم التزام': '#FF0000', 'لا ينطبق': '#808080'} %}
+    {% if doc %}
+        {% set childtables_name = ["elements", "elements_table_two"] %}
+        {% for childtable_name in childtables_name %}
+            {% for ele in doc.get(childtable_name) %}
+            <div class="col-lg-3 col-md-4 col-12">
+                <div target="_blank" rel="noopener noreferrer" class="frappe-card elements-page-card">
+                    <!-- <div>
+                        {% set standard = frappe.db.get_value("Standard Group Elements", ele.element, "standard") %}
+                        <a href="{{ frappe.get_url() }}/app/standards/{{ standard }}">{{ standard }}</a>
+                    </div> -->
+                    <!-- <div class="mt-2">
+                        {% set group = frappe.db.get_value("Standard Group Elements", ele.element, "group") %}
+                        <a href="{{ frappe.get_url() }}/app/standard-group/{{ group }}">{{ group}}</a>
+                    </div> -->
+                    <div class="mt-2">
+                        <a href="{{ frappe.get_url() }}/app/standard-group-elements/{{ ele.element }}">{{ ele.element}}</a>
+                    </div>
+                    <div class="mt-2">
+                        <div>{{ ele.element_name | wordwrap(40)}}</div>
+                    </div>
+                    <hr/>
+                    <div class="mt-2">
+                        <svg width="17" height="17">
+                            <circle cx="8" cy="8" r="7" fill="{{ colors[ele.evaluation] }}" />
+                        </svg>
+                        {{ ele.evaluation }}
+                    </div>
+                    {% if ele.recommendations %}
+                        <hr/>
+                        <div class="mt-2">
+                            <ul>
+                                    <li>{{ ele.get("recommendations") | wordwrap(20) }}</li>
+                            </ul>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        {% endfor %}
+    {% endif %}
+</div>

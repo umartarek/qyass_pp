@@ -1,0 +1,41 @@
+{
+ "chart_name": "chart1",
+ "chart_type": "Report",
+ "creation": "2024-03-20 23:11:29.088666",
+ "custom_options": "{\"x_field\": \"dimension\", \"chart_type\": \"Bar\", \"y_axis_fields\": [{\"idx\": 1, \"__islocal\": true, \"name\": \"row 1\", \"y_field\": \"completed_percent\", \"color\": \"#449CF0\"}, {\"idx\": 2, \"__islocal\": true, \"name\": \"row 2\", \"y_field\": \"proof_count\", \"color\": \"#ECAD4B\"}, {\"idx\": 3, \"__islocal\": true, \"name\": \"row 3\", \"y_field\": \"reviewed_count\", \"color\": \"#29CD42\"}], \"y_fields\": [\"completed_percent\", \"proof_count\", \"reviewed_count\"], \"colors\": [\"#449CF0\", \"#ECAD4B\", \"#29CD42\"]}",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2024-03-20 23:11:29.187932",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "chart1",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Expected Dimension Result",
+ "roles": [],
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "dimension",
+ "y_axis": [
+  {
+   "color": "#449CF0",
+   "y_field": "completed_percent"
+  },
+  {
+   "color": "#ECAD4B",
+   "y_field": "proof_count"
+  },
+  {
+   "color": "#29CD42",
+   "y_field": "reviewed_count"
+  }
+ ]
+}

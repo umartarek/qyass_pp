@@ -1,0 +1,51 @@
+{
+ "charts": [
+  {
+   "chart_name": "\u0627\u0643\u062a\u0645\u0627\u0644 \u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a",
+   "label": "proofs"
+  }
+ ],
+ "content": "[{\"id\":\"FyeNHfTRzc\",\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size: 18px; letter-spacing: 0.18px;\\\"><b>\u0627\u0643\u062a\u0645\u0627\u0644 \u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a</b></span>\",\"col\":12}},{\"id\":\"uMTDZCfroW\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a \u0627\u0644\u0645\u0643\u062a\u0645\u0644\u0647\",\"col\":6}},{\"id\":\"Rh03KxFokG\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a \u0627\u0644\u063a\u064a\u0631 \u0627\u0644\u0645\u0643\u062a\u0645\u0644\u0647\",\"col\":6}},{\"id\":\"gInFUlI_A8\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a \u0627\u0644\u062a\u064a \u062a\u0645\u062a \u0645\u0631\u062a\u062c\u0639\u062a\u0647\u0627\",\"col\":8}},{\"id\":\"eFG3j24n6_\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a \u0627\u0644\u062a\u064a \u0644\u0645 \u062a\u062a\u0645 \u0645\u0631\u0627\u062c\u0639\u062a\u0647\u0627\",\"col\":4}},{\"id\":\"3lrV-q4Eak\",\"type\":\"chart\",\"data\":{\"chart_name\":\"proofs\",\"col\":12}}]",
+ "creation": "2024-10-01 18:37:29.160876",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "milestone",
+ "idx": 1,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "\u0627\u0643\u062a\u0645\u0627\u0644 \u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a",
+ "links": [],
+ "modified": "2025-07-09 11:32:32.708093",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "\u0627\u0643\u062a\u0645\u0627\u0644 \u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a",
+ "number_cards": [
+  {
+   "label": "\u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a \u0627\u0644\u062a\u064a \u062a\u0645\u062a \u0645\u0631\u062a\u062c\u0639\u062a\u0647\u0627",
+   "number_card_name": "\u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a \u0627\u0644\u062a\u064a \u062a\u0645\u062a \u0645\u0631\u0627\u062c\u0639\u062a\u0647"
+  },
+  {
+   "label": "\u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a \u0627\u0644\u0645\u0643\u062a\u0645\u0644\u0647",
+   "number_card_name": "\u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a \u0627\u0644\u0645\u0643\u062a\u0645\u0644\u0647"
+  },
+  {
+   "label": "\u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a \u0627\u0644\u062a\u064a \u0644\u0645 \u062a\u062a\u0645 \u0645\u0631\u0627\u062c\u0639\u062a\u0647\u0627",
+   "number_card_name": "\u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a \u0627\u0644\u062a\u064a \u0644\u0645 \u062a\u062a\u0645 \u0645\u0631\u0627\u062c\u0639\u062a\u0647\u0627"
+  },
+  {
+   "label": "\u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a \u0627\u0644\u063a\u064a\u0631 \u0627\u0644\u0645\u0643\u062a\u0645\u0644\u0647",
+   "number_card_name": "\u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a \u0627\u0644\u063a\u064a\u0631 \u0627\u0644\u0645\u0643\u062a\u0645\u0644\u0647"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 7.0,
+ "shortcuts": [],
+ "title": "\u0627\u0643\u062a\u0645\u0627\u0644 \u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a"
+}

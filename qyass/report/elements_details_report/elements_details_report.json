@@ -1,0 +1,26 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2024-01-04 09:45:46.544080",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2024-01-04 09:45:46.544080",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Elements Details Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Standard Group Elements",
+ "report_name": "Elements Details Report",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

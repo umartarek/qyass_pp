@@ -1,0 +1,28 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2024-02-15 12:18:20.740312",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2024-02-15 12:18:20.740312",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Departments-Elements",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT digital_transformation_officer , count(*) as count  FROM `tabStandard Group Elements` group by digital_transformation_officer",
+ "ref_doctype": "Standard Group Elements",
+ "report_name": "Departments-Elements",
+ "report_script": "frappe.db",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

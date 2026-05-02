@@ -1,0 +1,36 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "",
+ "creation": "2024-10-01 12:08:56.787354",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Elements-2024",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>hello</p>",
+ "message_type": "HTML",
+ "modified": "2024-10-01 13:04:12.651465",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Reviewed proofs",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "",
+   "receiver_by_document_field": "",
+   "receiver_by_role": "Committee Member"
+  },
+  {
+   "receiver_by_document_field": "",
+   "receiver_by_role": "System Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": " {{ doc.name }} Has Changed, the Expected End Date is {{ doc.expected_end_date}} and Reviewed Proof {{  doc.reviewed_percent}}",
+ "value_changed": "reviewed_count"
+}

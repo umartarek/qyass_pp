@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-24 07:46:16.060584",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "attach_image_abpd",
+  "barcode",
+  "image_enfr"
+ ],
+ "fields": [
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "label": "barcode"
+  },
+  {
+   "fieldname": "attach_image_abpd",
+   "fieldtype": "Attach Image"
+  },
+  {
+   "fieldname": "image_enfr",
+   "fieldtype": "Image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-24 07:49:50.344476",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "qritems",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

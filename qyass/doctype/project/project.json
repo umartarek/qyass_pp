@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{id}.{project_name}",
+ "creation": "2024-01-02 12:54:21.609962",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "project_name",
+  "project_manager",
+  "project_status",
+  "project_budget",
+  "project_phase",
+  "reserved_value",
+  "project_category",
+  "column_break_gruo",
+  "start_date",
+  "end_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Project Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project_manager",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project Manager",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project_status",
+   "fieldtype": "Link",
+   "label": "Project Status",
+   "options": "Project Status"
+  },
+  {
+   "fieldname": "project_budget",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Project Budget",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project_phase",
+   "fieldtype": "Link",
+   "label": "Project Phase",
+   "options": "Project Phase"
+  },
+  {
+   "fieldname": "reserved_value",
+   "fieldtype": "Float",
+   "label": "Reserved Value",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "project_category",
+   "fieldtype": "Link",
+   "label": "Project Category",
+   "options": "Project Category"
+  },
+  {
+   "fieldname": "column_break_gruo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-02 13:07:18.835615",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Project",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

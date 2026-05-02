@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{idsub}{eaelemet_sub}",
+ "creation": "2024-09-10 09:01:43.159406",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "eaelement",
+  "idsub",
+  "eaelement_sub"
+ ],
+ "fields": [
+  {
+   "fieldname": "idsub",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0631\u0645\u0632"
+  },
+  {
+   "fieldname": "eaelement_sub",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0645\u062d\u0648\u0631"
+  },
+  {
+   "fieldname": "eaelement",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0645\u0646\u0638\u0627\u0631",
+   "options": "ea_elements"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-10 12:25:01.415836",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "ea_element_sub",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

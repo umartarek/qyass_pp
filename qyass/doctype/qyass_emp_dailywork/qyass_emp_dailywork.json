@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{YY}{MM}{DD}.{##}-{employee}",
+ "creation": "2024-03-22 11:54:25.515641",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "trans_date",
+  "\u0627\u0644\u062a\u0627\u0631\u064a\u062e_\u0646\u0647\u0627\u064a\u0629_\u0627\u0644\u0645\u0647\u0645\u0629",
+  "column_break_facu",
+  "department",
+  "column_break_otqq",
+  "employee",
+  "section_break_tehe",
+  "element",
+  "completed",
+  "section_break_evic",
+  "daily_tasks"
+ ],
+ "fields": [
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0627\u062f\u0627\u0631\u0629",
+   "options": "Department"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0645\u0648\u0638\u0641",
+   "link_filters": "[[\"Employee\",\"department\",\"=\",\"eval: doc.department\"]]",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "section_break_tehe",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "element",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0645\u0639\u064a\u0627\u0631",
+   "link_filters": "[[\"Elements-2024\",\"the_employee_in_charge\",\"=\",\"eval: doc.employee\"]]",
+   "options": "Elements-2024"
+  },
+  {
+   "fieldname": "trans_date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u062a\u0627\u0631\u064a\u062e",
+   "options": "Today",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_facu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_otqq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_evic",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "daily_tasks",
+   "fieldtype": "Table",
+   "label": "\u062a\u0641\u0635\u064a\u0644 \u0627\u0644\u0645\u0647\u0627\u0645 \u0627\u0644\u064a\u0648\u0645\u064a\u0629",
+   "options": "Qyass_emp_dailywork_child",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "completed",
+   "fieldtype": "Check",
+   "label": "\u062a\u0645 \u0627\u0646\u062c\u0627\u0632 \u0645\u0647\u0627\u0645 \u0627\u0644\u0645\u0639\u064a\u0627\u0631"
+  },
+  {
+   "fieldname": "\u0627\u0644\u062a\u0627\u0631\u064a\u062e_\u0646\u0647\u0627\u064a\u0629_\u0627\u0644\u0645\u0647\u0645\u0629",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u062a\u0627\u0631\u064a\u062e \u0646\u0647\u0627\u064a\u0629 \u0627\u0644\u0645\u0647\u0645\u0629"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-21 10:46:57.283356",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Qyass_emp_dailywork",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

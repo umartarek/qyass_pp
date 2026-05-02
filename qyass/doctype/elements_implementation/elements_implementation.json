@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-10 14:15:31.201325",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "overview_section",
+  "step",
+  "department",
+  "main_employee",
+  "column_break_ocbt",
+  "element",
+  "group",
+  "standard",
+  "date_section",
+  "start_date",
+  "implementation_type",
+  "column_break_nlyx",
+  "end_date",
+  "actual_end_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "step",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Step"
+  },
+  {
+   "fieldname": "column_break_ocbt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "element",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Element",
+   "options": "Standard Group Elements"
+  },
+  {
+   "fetch_from": "element.group",
+   "fieldname": "group",
+   "fieldtype": "Link",
+   "label": "Group",
+   "options": "Standard Group"
+  },
+  {
+   "fetch_from": "element.standard",
+   "fieldname": "standard",
+   "fieldtype": "Link",
+   "label": "Standard",
+   "options": "Standards"
+  },
+  {
+   "fetch_from": "element.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fetch_from": "element.the_employee_in_charge",
+   "fieldname": "main_employee",
+   "fieldtype": "Link",
+   "label": "Main Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "overview_section",
+   "fieldtype": "Section Break",
+   "label": "Overview"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "date_section",
+   "fieldtype": "Section Break",
+   "label": "Date"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "column_break_nlyx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "actual_end_date",
+   "fieldtype": "Date",
+   "label": "Actual End date"
+  },
+  {
+   "fieldname": "implementation_type",
+   "fieldtype": "Link",
+   "label": "Implementation Type",
+   "options": "Implementations Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-15 09:57:46.482724",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Elements Implementation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

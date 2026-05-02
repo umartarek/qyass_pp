@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-27 16:29:56.682494",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "enable_youtube_tracking",
+  "api_key",
+  "frequency"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enable_youtube_tracking",
+   "fieldtype": "Check",
+   "label": "Enable YouTube Tracking"
+  },
+  {
+   "depends_on": "eval:doc.enable_youtube_tracking\r\n",
+   "fieldname": "api_key",
+   "fieldtype": "Data",
+   "label": "API Key"
+  },
+  {
+   "default": "1 hr",
+   "depends_on": "eval:doc.enable_youtube_tracking\r\n",
+   "fieldname": "frequency",
+   "fieldtype": "Select",
+   "label": "Frequency",
+   "mandatory_depends_on": "eval:doc.enable_youtube_tracking\r\n",
+   "options": "30 mins\n1 hr\n6 hrs\nDaily"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-02-27 16:32:54.878205",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Video Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

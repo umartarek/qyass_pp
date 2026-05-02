@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:element",
+ "creation": "2024-02-27 16:10:19.022671",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "element",
+  "provider",
+  "url",
+  "youtube_video_id",
+  "column_break_ndzl",
+  "publish_date",
+  "duration",
+  "youtube_statistics_section",
+  "like_count",
+  "view_count",
+  "column_break_nymp",
+  "dislike_count",
+  "comment_count",
+  "section_break_yiws",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "provider",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Provider",
+   "options": "YouTube\nVimeo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "label": "URL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "youtube_video_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Youtube ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ndzl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "publish_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Publish Date"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "label": "Duration"
+  },
+  {
+   "depends_on": "eval:doc.provider==\"YouTube\"",
+   "fieldname": "youtube_statistics_section",
+   "fieldtype": "Section Break",
+   "label": "Youtube Statistics"
+  },
+  {
+   "fieldname": "like_count",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Likes",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "view_count",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Views",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_nymp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dislike_count",
+   "fieldtype": "Float",
+   "label": "Dislikes",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "comment_count",
+   "fieldtype": "Float",
+   "label": "Comments",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_yiws",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "element",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Element",
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-22 08:12:05.532154",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Video",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

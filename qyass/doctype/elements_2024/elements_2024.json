@@ -1,0 +1,424 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{number}:{element}",
+ "creation": "2024-02-26 12:22:22.404180",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "\u0628\u064a\u0627\u0646\u0627\u062a_\u0627\u0633\u0627\u0633\u064a\u0629_tab",
+  "vision",
+  "dimension",
+  "number",
+  "element",
+  "goal",
+  "is_late",
+  "column_break_rgsf",
+  "department",
+  "the_employee_in_charge",
+  "digital_transformation_officer",
+  "project",
+  "expected_end_date",
+  "custom_status",
+  "evaluation",
+  "previous_element",
+  "column_break_bbta",
+  "consultant_specialization",
+  "consultant",
+  "proof_count",
+  "completed_count",
+  "reviewed_count",
+  "complete_percent",
+  "reviewed_percent",
+  "action_take",
+  "table_dmpi",
+  "tab_break_qilf",
+  "application_requirements_section",
+  "overall_progress",
+  "requirements",
+  "more_tab",
+  "elements_implementation_section_section",
+  "progress_percentage",
+  "proof_document",
+  "\u0627\u0644\u0645\u0644\u0627\u062d\u0638\u0627\u062a_section",
+  "\u0645\u0644\u0627\u062d\u0638\u0627\u062a_\u0627\u0644\u0631\u0641\u0639_\u0627\u0644\u0627\u0648\u0644",
+  "column_break_zgqg",
+  "\u0645\u0644\u0627\u062d\u0638\u0627\u062a_\u0627\u0644\u0631\u0641\u0639_\u0627\u0644\u062b\u0627\u0646\u064a",
+  "\u0645\u0633\u062a\u0646\u062f\u0627\u062a_\u0627\u0644\u0627\u062b\u0628\u0627\u062a_tab",
+  "legal_document_section_section",
+  "legal_documents_table",
+  "stages",
+  "implementation_stages_section_section",
+  "implementation_stages_table",
+  "project_delivery_stages_section",
+  "project_delivery_stages",
+  "\u0627\u0644\u064a\u0629_\u0627\u0644\u062a\u0646\u0641\u064a\u0630",
+  "\u0627\u0644\u064a\u0629_\u0627\u0644\u062a\u0646\u0641\u064a\u0630\u0633",
+  "tab_break_wpol",
+  "section_break_xult",
+  "recommendations",
+  "section_break_qglv",
+  "handicaps"
+ ],
+ "fields": [
+  {
+   "fieldname": "number",
+   "fieldtype": "Data",
+   "label": "Number"
+  },
+  {
+   "fieldname": "element",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Element",
+   "max_height": "60px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "goal",
+   "fieldtype": "Text",
+   "label": "Goal",
+   "max_height": "60px"
+  },
+  {
+   "default": "Today",
+   "fieldname": "expected_end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expected End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_rgsf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Department",
+   "options": "Department",
+   "search_index": 1
+  },
+  {
+   "fieldname": "the_employee_in_charge",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0645\u0648\u0638\u0641 \u0627\u0644\u0645\u0633\u0624\u0648\u0644 \u0641\u064a \u0627\u0644\u0627\u062f\u0627\u0631\u0629",
+   "link_filters": "[[\"Employee\",\"department\",\"=\",\"eval:doc.department\"]]",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "digital_transformation_officer",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Digital Transformation Officer",
+   "link_filters": "[[\"Employee\",\"type\",\"=\",\"\u0645\u0648\u0638\u0641 \u062a\u062d\u0648\u0644 \u0631\u0642\u0645\u064a\"]]",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "default": "\u0644\u0645 \u064a\u0628\u062f\u0623",
+   "fieldname": "custom_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Element Completeness Status",
+   "options": "\u0644\u0645 \u064a\u0628\u062f\u0623\n\u062a\u062d\u062a \u0627\u0644\u0627\u062c\u0631\u0627\u0621\n\u0627\u0644\u062c\u0648\u062f\u0629\n\u0627\u0644\u0645\u0631\u0627\u062c\u0639\u0629\n\u062a\u0645 \u0627\u0644\u0627\u0639\u062a\u0645\u0627\u062f"
+  },
+  {
+   "default": "\u0627\u0644\u062a\u0632\u0627\u0645 \u0643\u0644\u064a",
+   "fieldname": "evaluation",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u0645\u062a\u0648\u0642\u0639",
+   "options": "\u0627\u0644\u062a\u0632\u0627\u0645 \u0643\u0644\u064a\n\u0627\u0644\u062a\u0632\u0627\u0645 \u062c\u0632\u0626\u064a\n\u0639\u062f\u0645 \u0627\u0644\u062a\u0632\u0627\u0645\n\u0644\u0627 \u064a\u0646\u0637\u0628\u0642"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_late",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is Late"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_xult",
+   "fieldtype": "Section Break",
+   "label": "Recommendations"
+  },
+  {
+   "fieldname": "recommendations",
+   "fieldtype": "Text Editor",
+   "label": "Recommendations"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_qglv",
+   "fieldtype": "Section Break",
+   "label": "Handicaps"
+  },
+  {
+   "fieldname": "handicaps",
+   "fieldtype": "Text Editor",
+   "label": "Handicaps"
+  },
+  {
+   "fieldname": "legal_document_section_section",
+   "fieldtype": "Section Break",
+   "label": "Legal Document Section"
+  },
+  {
+   "fieldname": "legal_documents_table",
+   "fieldtype": "Text Editor",
+   "label": "Legal Documents Table"
+  },
+  {
+   "fieldname": "elements_implementation_section_section",
+   "fieldtype": "Section Break",
+   "label": "\u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a \u0627\u0644\u0645\u0637\u0644\u0648\u0628\u0629"
+  },
+  {
+   "fieldname": "implementation_stages_section_section",
+   "fieldtype": "Section Break",
+   "label": "Implementation Stages Section"
+  },
+  {
+   "fieldname": "implementation_stages_table",
+   "fieldtype": "Table",
+   "label": "Implementation Stages Table",
+   "options": "Implementation Stages"
+  },
+  {
+   "fieldname": "vision",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Vision",
+   "options": "Vision",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.vision",
+   "fieldname": "dimension",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Dimension",
+   "link_filters": "[[\"Dimension\",\"vision\",\"=\",\"eval:doc.vision\"]]",
+   "mandatory_depends_on": "eval: doc.vision;",
+   "options": "Dimension"
+  },
+  {
+   "fieldname": "previous_element",
+   "fieldtype": "Table MultiSelect",
+   "hidden": 1,
+   "label": "Previous Element",
+   "options": "Element Child"
+  },
+  {
+   "fieldname": "application_requirements_section",
+   "fieldtype": "Section Break",
+   "label": "Application Requirements"
+  },
+  {
+   "fieldname": "consultant_specialization",
+   "fieldtype": "Link",
+   "label": "Consultant Specialization",
+   "options": "Specialization"
+  },
+  {
+   "depends_on": "eval:doc.consultant_specialization",
+   "fieldname": "consultant",
+   "fieldtype": "Link",
+   "label": "Consultant",
+   "options": "Consultant"
+  },
+  {
+   "fieldname": "project_delivery_stages_section",
+   "fieldtype": "Section Break",
+   "label": "Project Delivery Stages"
+  },
+  {
+   "fieldname": "project_delivery_stages",
+   "fieldtype": "Table",
+   "label": "Project Delivery Stages",
+   "options": "Project Delivery Stages"
+  },
+  {
+   "fieldname": "complete_percent",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Complete Percent",
+   "read_only": 1
+  },
+  {
+   "fieldname": "proof_count",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Proof Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "completed_count",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Completed Proof",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reviewed_count",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Reviewed Proof",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reviewed_percent",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Reviewed Percent",
+   "read_only": 1
+  },
+  {
+   "fieldname": "more_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0645\u0633\u062a\u0646\u062f\u0627\u062a \u0627\u0644\u0627\u062b\u0628\u0627\u062a"
+  },
+  {
+   "fieldname": "\u0628\u064a\u0627\u0646\u0627\u062a_\u0627\u0633\u0627\u0633\u064a\u0629_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0633\u0627\u0633\u064a\u0629"
+  },
+  {
+   "fieldname": "tab_break_qilf",
+   "fieldtype": "Tab Break",
+   "label": "\u0627\u0644\u0645\u0637\u0644\u0648\u0628\u0627\u062a"
+  },
+  {
+   "fieldname": "tab_break_wpol",
+   "fieldtype": "Tab Break",
+   "label": "\u0627\u0644\u062a\u0648\u0635\u064a\u0627\u062a \u0648 \u0627\u0644\u0645\u0639\u0648\u0642\u0627\u062a"
+  },
+  {
+   "fieldname": "stages",
+   "fieldtype": "Tab Break",
+   "label": "\u0645\u0631\u0627\u062d\u0644 \u0627\u0644\u062a\u0633\u0644\u064a\u0645"
+  },
+  {
+   "fieldname": "\u0645\u0633\u062a\u0646\u062f\u0627\u062a_\u0627\u0644\u0627\u062b\u0628\u0627\u062a_tab",
+   "fieldtype": "Tab Break",
+   "hidden": 1,
+   "label": "\u0627\u0644\u0633\u0646\u062f \u0627\u0644\u0646\u0638\u0627\u0645\u064a"
+  },
+  {
+   "fieldname": "overall_progress",
+   "fieldtype": "Percent",
+   "label": "percent",
+   "read_only": 1
+  },
+  {
+   "fieldname": "requirements",
+   "fieldtype": "Table",
+   "ignore_xss_filter": 1,
+   "options": "Requirements"
+  },
+  {
+   "fieldname": "progress_percentage",
+   "fieldtype": "Percent",
+   "read_only": 1
+  },
+  {
+   "fieldname": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a_\u0627\u0644\u0631\u0641\u0639_\u0627\u0644\u0627\u0648\u0644",
+   "fieldtype": "Small Text",
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0627\u0644\u0631\u0641\u0639 \u0627\u0644\u0627\u0648\u0644"
+  },
+  {
+   "fieldname": "column_break_bbta",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "allow_in_quick_entry": 1,
+   "fieldname": "proof_document",
+   "fieldtype": "Table",
+   "label": "Proof Document Child",
+   "options": "Proof Document"
+  },
+  {
+   "fieldname": "\u0627\u0644\u064a\u0629_\u0627\u0644\u062a\u0646\u0641\u064a\u0630\u0633",
+   "fieldtype": "Text Editor",
+   "label": "\u0627\u0644\u064a\u0629 \u0627\u0644\u062a\u0646\u0641\u064a\u0630"
+  },
+  {
+   "fieldname": "\u0627\u0644\u064a\u0629_\u0627\u0644\u062a\u0646\u0641\u064a\u0630",
+   "fieldtype": "Tab Break",
+   "label": "\u0627\u0644\u064a\u0629 \u0627\u0644\u062a\u0646\u0641\u064a\u0630"
+  },
+  {
+   "fieldname": "\u0627\u0644\u0645\u0644\u0627\u062d\u0638\u0627\u062a_section",
+   "fieldtype": "Section Break",
+   "label": "\u0627\u0644\u0645\u0644\u0627\u062d\u0638\u0627\u062a"
+  },
+  {
+   "fieldname": "column_break_zgqg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a_\u0627\u0644\u0631\u0641\u0639_\u0627\u0644\u062b\u0627\u0646\u064a",
+   "fieldtype": "Small Text",
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0627\u0644\u0631\u0641\u0639 \u0627\u0644\u062b\u0627\u0646\u064a"
+  },
+  {
+   "fieldname": "action_take",
+   "fieldtype": "Text",
+   "label": "\u0627\u0644\u0627\u062c\u0631\u0627\u0621 \u0627\u0644\u0637\u0627\u0631\u0626 \u0627\u0644\u0645\u0637\u0644\u0648\u0628",
+   "max_height": "60px"
+  },
+  {
+   "fieldname": "table_dmpi",
+   "fieldtype": "Table",
+   "options": "result-child"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "make_attachments_public": 1,
+ "modified": "2026-04-29 16:11:23.364324",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Elements-2024",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "element,number",
+ "sort_field": "dimension",
+ "sort_order": "ASC",
+ "states": [],
+ "track_changes": 1
+}

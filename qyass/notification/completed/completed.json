@@ -1,0 +1,36 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "doc.completed_count != 0 and doc.proof_count == doc.completed_count",
+ "creation": "2024-10-01 12:16:10.734215",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Elements-2024",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>hello</p>",
+ "message_type": "HTML",
+ "modified": "2024-10-01 12:35:17.742187",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Completed",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "",
+   "receiver_by_document_field": "",
+   "receiver_by_role": "Committee Member"
+  },
+  {
+   "receiver_by_document_field": "",
+   "receiver_by_role": "System Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": " {{ doc.name }} Has Changed, Congrats, the Proof is Ready {{  doc.complete_percent}}",
+ "value_changed": "complete_percent"
+}

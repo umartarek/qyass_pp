@@ -1,0 +1,29 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2024-12-10 12:30:31.387261",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 2,
+ "is_standard": "Yes",
+ "letter_head": "hello",
+ "letterhead": null,
+ "modified": "2025-07-15 09:21:38.141818",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Test Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "select dimension,sum(reviewed_count) as proof_completed_sum, sum(proof_count) as proof_count_sum ,  truncate(sum(reviewed_count)/sum(proof_count),2)*100 as reviewed_count  from `tabElements-2024`  group by dimension",
+ "ref_doctype": "Elements-2024",
+ "report_name": "Test Report",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}

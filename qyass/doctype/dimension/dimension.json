@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{subnumber}:{dimension}",
+ "creation": "2024-02-26 14:17:40.034362",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "vision",
+  "vision_name",
+  "dimension",
+  "weight",
+  "column_break_tcny",
+  "subnumber",
+  "total_number",
+  "notes_section",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "weight",
+   "fieldtype": "Data",
+   "label": "Weight"
+  },
+  {
+   "fieldname": "column_break_tcny",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": ".number",
+   "fieldname": "subnumber",
+   "fieldtype": "Data",
+   "label": "Subnumber"
+  },
+  {
+   "fieldname": "total_number",
+   "fieldtype": "Data",
+   "label": "Total Number"
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "vision",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Vision",
+   "options": "Vision",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "vision.vision",
+   "fieldname": "vision_name",
+   "fieldtype": "Data",
+   "label": "Vision Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dimension",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Dimension",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-27 11:35:07.406003",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Dimension",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "subnumber",
+ "sort_order": "ASC",
+ "states": []
+}

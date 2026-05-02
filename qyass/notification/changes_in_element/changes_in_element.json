@@ -1,0 +1,33 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2024-03-22 03:30:27.520488",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Elements-2024",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "chane toanother state",
+ "modified": "2024-03-22 03:36:36.273965",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "changes in element",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "",
+   "receiver_by_role": "All"
+  },
+  {
+   "receiver_by_role": "Administrator"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "set_property_after_alert": "",
+ "subject": "{{doc.name}} changed",
+ "value_changed": "evaluation"
+}

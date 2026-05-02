@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{government_id}. {organization_name}",
+ "creation": "2023-12-06 11:24:47.792391",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "overview_section",
+  "government_id",
+  "organization_name",
+  "column_break_diam",
+  "activity",
+  "entity",
+  "section_break_qiqn",
+  "region",
+  "column_break_baeh",
+  "city",
+  "section_break_bpft",
+  "main_employee",
+  "location",
+  "column_break_cpca",
+  "date_created",
+  "website",
+  "open_website",
+  "qyass_section",
+  "qyass",
+  "department_section",
+  "department"
+ ],
+ "fields": [
+  {
+   "fieldname": "overview_section",
+   "fieldtype": "Section Break",
+   "label": "Overview"
+  },
+  {
+   "fieldname": "government_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Government ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "organization_name",
+   "fieldtype": "Data",
+   "label": "Organization Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_diam",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "activity",
+   "fieldtype": "Link",
+   "label": "Activity",
+   "options": "Activity"
+  },
+  {
+   "fieldname": "entity",
+   "fieldtype": "Link",
+   "label": "Entity",
+   "options": "Entity"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_qiqn",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Region"
+  },
+  {
+   "fieldname": "column_break_baeh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Link",
+   "label": "City",
+   "options": "City"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_bpft",
+   "fieldtype": "Section Break",
+   "label": "More Info"
+  },
+  {
+   "fieldname": "main_employee",
+   "fieldtype": "Link",
+   "label": "Main Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_cpca",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_created",
+   "fieldtype": "Date",
+   "label": "Date Created"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "qyass_section",
+   "fieldtype": "Section Break",
+   "label": "Qyass"
+  },
+  {
+   "fieldname": "qyass",
+   "fieldtype": "Table",
+   "label": "Qyass",
+   "options": "Qyass Info"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "department_section",
+   "fieldtype": "Section Break",
+   "label": "Department"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Table",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "depends_on": "eval: doc.website;",
+   "fieldname": "open_website",
+   "fieldtype": "Button",
+   "label": "Open Website"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-11 09:46:02.575897",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Organization",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

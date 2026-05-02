@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-07 10:46:56.922656",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "audio",
+  "file",
+  "table_qbhc"
+ ],
+ "fields": [
+  {
+   "fieldname": "audio",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "file",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "table_qbhc",
+   "fieldtype": "Table",
+   "options": "audio-child"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-07 12:42:59.896362",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Audio",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

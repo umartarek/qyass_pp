@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:mobile",
+ "creation": "2024-06-11 00:58:57.483695",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "mobile",
+  "birth",
+  "select_guko",
+  "postion",
+  "column_break_xijj",
+  "name1",
+  "gender",
+  "group",
+  "section_break_jbpp",
+  "table_trvj",
+  "section_break_zdug",
+  "table_mskn",
+  "location_section",
+  "geolocation_ipua"
+ ],
+ "fields": [
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Mobile",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "birth",
+   "fieldtype": "Date",
+   "label": "Birth"
+  },
+  {
+   "fieldname": "column_break_xijj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale\nOther"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "location_section",
+   "fieldtype": "Section Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "geolocation_ipua",
+   "fieldtype": "Geolocation"
+  },
+  {
+   "fieldname": "select_guko",
+   "fieldtype": "Select",
+   "label": "Relatshionship",
+   "options": "Single\nMarried\nDivorce"
+  },
+  {
+   "fieldname": "group",
+   "fieldtype": "Link",
+   "label": "Group",
+   "options": "Amro-Groups"
+  },
+  {
+   "fieldname": "postion",
+   "fieldtype": "Link",
+   "label": "postion",
+   "options": "Amro-progress"
+  },
+  {
+   "fieldname": "section_break_jbpp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_trvj",
+   "fieldtype": "Table",
+   "options": "sport-child"
+  },
+  {
+   "fieldname": "section_break_zdug",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_mskn",
+   "fieldtype": "Table",
+   "options": "Food-child"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-21 23:24:07.798582",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Amro",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

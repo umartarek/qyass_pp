@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-08 13:42:38.733988",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "element",
+  "element_name",
+  "evaluation",
+  "recommendations",
+  "status"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "element",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Element",
+   "options": "Standard Group Elements"
+  },
+  {
+   "columns": 6,
+   "fetch_from": "element.element",
+   "fieldname": "element_name",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Element Name",
+   "max_height": "60px"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "element.evaluation",
+   "fieldname": "evaluation",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Evaluation",
+   "options": "\u0627\u0644\u062a\u0632\u0627\u0645 \u0643\u0644\u064a\n\u0627\u0644\u062a\u0632\u0627\u0645 \u062c\u0632\u0626\u064a\n\u0639\u062f\u0645 \u0627\u0644\u062a\u0632\u0627\u0645\n\u0644\u0627 \u064a\u0646\u0637\u0628\u0642",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "element.recommendations",
+   "fieldname": "recommendations",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Recommendations",
+   "max_height": "60px"
+  },
+  {
+   "bold": 1,
+   "columns": 1,
+   "fetch_from": "element.custom_status",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "no_copy": 1,
+   "options": "To Do\nProgress\nQuality\nReview\nApproved"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-14 11:19:28.795696",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Elements Child Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

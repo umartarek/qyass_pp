@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-25 17:16:02.225555",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "picture",
+  "image_lghb",
+  "column_break_qdyq",
+  "full_name",
+  "gender",
+  "date_of_birth",
+  "phone_number",
+  "email_address",
+  "personal_trainer",
+  "occubation",
+  "section_break_nkks",
+  "geolocation_xpdc"
+ ],
+ "fields": [
+  {
+   "fieldname": "picture",
+   "fieldtype": "Attach Image",
+   "in_preview": 1,
+   "label": "Picture"
+  },
+  {
+   "fieldname": "image_lghb",
+   "fieldtype": "Image",
+   "in_preview": 1,
+   "options": "picture"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Full name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Gender",
+   "options": "male\nfemale",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Phone number ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "occubation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Occubation ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Email Address ",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_nkks",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "geolocation_xpdc",
+   "fieldtype": "Geolocation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "personal_trainer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Personal trainer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qdyq",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-14 21:23:37.106694",
+ "modified_by": "Administrator",
+ "module": "Qyass",
+ "name": "Member Detail",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
