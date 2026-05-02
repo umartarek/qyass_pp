@@ -1,9 +1,9 @@
 app_name = "qyass"
 app_title = "Qyass"
-app_publisher = "IT Systematic"
+app_publisher = "Umar Tarek"
 app_description = "Qyass App"
-app_email = "support@itsystematic.com"
-app_license = "mit"
+app_email = "test@example.com"
+app_license = "MIT"
 # required_apps = []
 
 # your_app/hooks.py
